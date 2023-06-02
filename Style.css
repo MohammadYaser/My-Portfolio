@@ -7,13 +7,14 @@
   gap: 12px;
   width: 375px;
   height: 590px;
-  left: 0px;
+  left: 0;
   top: 92px;
   background: #1c1a19;
   background-image: url('images/bg_img.png');
   background-repeat: no-repeat;
   background-position: 100% 122%;
 }
+
 .topnav {
   position: relative;
   width: 100%;
@@ -40,90 +41,71 @@
 }
 
 .fa-icon {
-    margin-top: -23%;
-    margin-left: 4%;
-  }
-  .active {
-    width: 70px;
-    height: 24px;
+  margin-top: -23%;
+  margin-left: 4%;
+}
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 24px;
-    margin-top: 8%;
+.active {
+  width: 70px;
+  height: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 8%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
 
-    display: flex;
-    align-items: center;
-    text-align: center;
+.headline {
+  width: 327px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
 
-    /* Theme 3 / Neutral 11 */
+main {
+  padding-left: 16px;
+}
 
-    color: #FFFFFF;
+.title {
+  width: 327px;
+  height: 27px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: -54px;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
 
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
-  }
-
-  .headline {
-    width: 327px;
-    font-family: 'Crete Round';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 56px;
-    line-height: 64px;
-    letter-spacing: 0.37px;
-    color: #FF6B00;
-
-  }
-
-  main {
-    padding-left: 16px;
-  }
-
-  .title {
-    width: 327px;
-    height: 27px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    margin-top: -54px;
-    font-size: 24px;
-    line-height: 32px;
-    /* or 133% */
-
-    display: flex;
-    align-items: center;
-
-    /* Theme 3 / Primary 4 */
-
-    color: #FFF5E1;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-  }
-
-  .text-content {
-    width: 327px;
-    height: 123px;
-    margin-top: -18px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFFFFF;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-  }
+.text-content {
+  width: 327px;
+  height: 123px;
+  margin-top: -18px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
