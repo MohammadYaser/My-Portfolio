@@ -1,0 +1,39 @@
+.mobile-container {
+  margin: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 375px;
+  height: 590px;
+  left: 0px;
+  top: 92px;
+  background: #1c1a19;
+  background-repeat: no-repeat;
+  background-position: 100% 122%;
+}
+.topnav {
+  position: relative;
+  width: 100%;
+  height: 92px;
+  background: #3c3a39;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.icon {
+  float: right;
+  margin-top: 8%;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
