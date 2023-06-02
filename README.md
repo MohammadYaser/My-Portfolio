@@ -59,16 +59,13 @@
 
 To get a local copy up and running, follow these steps.
 
-### Prerequisites
-
-In order to run this project you need:
-
-### Setup
-
-Clone this repository to your desired folder:
-
-https://github.com/MohammadYaser/Portfolio
-
+## Setup 
+Download the file to local directory
+- if you have already install github in your local pc run
+```sh
+  git clone https://github.com/MohammadYaser/Portfolio
+```
+- or Download the zip file from the github directory
 
 ### Install
 
