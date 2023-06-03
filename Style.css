@@ -104,23 +104,20 @@ main {
   order: 2;
   flex-grow: 0;
 }
+
 .fa-icon {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 8px;
-
   width: 40px;
   height: 40px;
-
   border-radius: 8px;
-
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 0;
 }
+
 .fa-icon li {
   margin-top: -23%;
   margin-left: 25%;
