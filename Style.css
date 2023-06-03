@@ -1,6 +1,7 @@
 body {
   background-color: aquamarine;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -10,6 +11,7 @@ body {
   width: 375px;
   margin: auto;
 }
+
 .mobile-container {
   color: white;
   display: flex;
@@ -24,31 +26,6 @@ body {
   background-image: url("images/bg_img.png");
   background-repeat: no-repeat;
   background-position: 100% 122%;
-}
-
-.topnav {
-  position: relative;
-  width: 100%;
-  height: 92px;
-  background: #3c3a39;
-}
-
-.topnav a {
-  float: left;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a.icon {
-  float: right;
-  margin-top: 8%;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
 }
 
 .active {
@@ -138,7 +115,7 @@ body {
 .headline-2 {
   width: 327px;
   height: 83px;
-  font-family: "Crete Round";
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -155,8 +132,7 @@ body {
   /* Vector */
 
   width: 327px;
-  height: 0px;
-
+  height: 0;
   border: 1px solid #212121;
 
   /* Inside auto layout */
@@ -171,7 +147,6 @@ body {
   height: 237px;
   margin-top: 23%;
   background: url("images/img_1.png");
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -180,11 +155,12 @@ body {
 .headline-3 {
   width: 327px;
   height: 36px;
-  font-family: "Crete Round";
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
+
   /* or 138% */
 
   display: flex;
@@ -207,11 +183,12 @@ body {
 
   /* Theme 3 / Body Reguler 2 */
 
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+
   /* or 150% */
 
   /* Neutrals/N900 */
@@ -253,7 +230,8 @@ body {
 
   /* Neutrals/N0 */
 
-  background: #ffffff;
+  background: #fff;
+
   /* Neutrals/N90 */
 
   border: 1px solid #8993a4;
@@ -279,7 +257,8 @@ body {
 
   /* Neutrals/N0 */
 
-  background: #ffffff;
+  background: #fff;
+
   /* Neutrals/N90 */
 
   border: 1px solid #8993a4;
@@ -305,7 +284,8 @@ body {
 
   /* Neutrals/N0 */
 
-  background: #ffffff;
+  background: #fff;
+
   /* Neutrals/N90 */
 
   border: 1px solid #8993a4;
@@ -331,7 +311,8 @@ body {
 
   /* Neutrals/N0 */
 
-  background: #ffffff;
+  background: #fff;
+
   /* Neutrals/N90 */
 
   border: 1px solid #8993a4;
@@ -342,14 +323,16 @@ body {
   order: 0;
   flex-grow: 0;
 }
+
 .btn-css a {
   width: 31px;
   height: 20px;
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+
   /* identical to box height, or 133% */
 
   /* Neutrals/N900 */
@@ -366,11 +349,12 @@ body {
 .btn-html a {
   width: 43px;
   height: 20px;
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+
   /* identical to box height, or 133% */
 
   /* Neutrals/N900 */
@@ -387,11 +371,12 @@ body {
 .btn-bootstrap a {
   width: 71px;
   height: 20px;
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+
   /* identical to box height, or 133% */
 
   /* Neutrals/N900 */
@@ -408,11 +393,12 @@ body {
 .btn-ruby a {
   width: 37px;
   height: 20px;
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+
   /* identical to box height, or 133% */
 
   /* Neutrals/N900 */
@@ -425,6 +411,7 @@ body {
   order: 0;
   flex-grow: 0;
 }
+
 .btn-sub-1 {
   /* Auto layout */
 
@@ -436,6 +423,7 @@ body {
   width: 124px;
   height: 48px;
   border: none;
+
   /* Theme 3 / Primary 1 */
 
   background: #ff6b00;
@@ -446,6 +434,7 @@ body {
   order: 3;
   flex-grow: 0;
 }
+
 .btn-sub-1 a {
   width: 100px;
   height: 24px;
@@ -454,6 +443,7 @@ body {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+
   /* identical to box height, or 141% */
 
   display: flex;
@@ -463,7 +453,7 @@ body {
 
   /* Theme 2 / Neutral 11 */
 
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 
   /* Inside auto layout */
@@ -472,30 +462,34 @@ body {
   order: 0;
   flex-grow: 0;
 }
+
 .pro-art {
   padding-top: 14%;
   margin-top: 4%;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 99.94%
     ),
     url("images/img_2.png");
 }
+
 .headline-4 {
   width: 295px;
   height: 81px;
   margin-left: 4%;
-  font-family: "Crete Round";
+  font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
+
   /* or 138% */
 
   /* Neutrals/N0 */
 
-  color: #ffffff;
+  color: #fff;
 
   /* Inside auto layout */
 
@@ -503,6 +497,7 @@ body {
   order: 0;
   flex-grow: 0;
 }
+
 .text-content-2 {
   width: 301px;
   height: 99px;
@@ -515,10 +510,10 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+
   /* or 150% */
   margin-top: -3%;
-
-  color: #ffffff;
+  color: #fff;
 
   /* Inside auto layout */
 
@@ -538,12 +533,15 @@ body {
 .btn-list-1 li:not(:first-child) {
   margin-left: 3%;
 }
+
 .btn-list-1 button {
   border: none;
 }
+
 .btn-list-1 a {
   text-decoration: none;
 }
+
 .btn-html-1 {
   display: flex;
   flex-direction: row;
@@ -559,19 +557,21 @@ body {
   order: 0;
   flex-grow: 0;
 }
+
 .btn-html-1 a {
   width: 43px;
   height: 20px;
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+
   /* identical to box height, or 133% */
 
   /* Neutrals/N0 */
 
-  color: #ffffff;
+  color: #fff;
 
   /* Inside auto layout */
 
@@ -579,6 +579,7 @@ body {
   order: 0;
   flex-grow: 0;
 }
+
 .btn-bootstrap-1 {
   display: flex;
   flex-direction: row;
@@ -594,19 +595,21 @@ body {
   order: 1;
   flex-grow: 0;
 }
+
 .btn-bootstrap-1 a {
   width: 71px;
   height: 20px;
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+
   /* identical to box height, or 133% */
 
   /* Neutrals/N0 */
 
-  color: #ffffff;
+  color: #fff;
 
   /* Inside auto layout */
 
@@ -614,6 +617,7 @@ body {
   order: 0;
   flex-grow: 0;
 }
+
 .btn-ruby-1 {
   /* Auto layout */
 
@@ -621,10 +625,8 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 10px 12px;
-
   width: 71px;
   height: 40px;
-
   background: rgba(255, 255, 255, 0.24);
 
   /* Inside auto layout */
@@ -633,20 +635,21 @@ body {
   order: 2;
   flex-grow: 0;
 }
+
 .btn-ruby-1 a {
   width: 37px;
   height: 20px;
-
-  font-family: "Inter",sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
+
   /* identical to box height, or 133% */
 
   /* Neutrals/N0 */
 
-  color: #ffffff;
+  color: #fff;
 
   /* Inside auto layout */
 
@@ -654,14 +657,16 @@ body {
   order: 0;
   flex-grow: 0;
 }
+
 .btn-sub-2 {
   width: 100%;
   height: 48px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   border: none;
   background: #ff6b00;
 }
+
 .btn-sub-2 a {
   width: 100px;
   height: 24px;
@@ -672,9 +677,34 @@ body {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.topnav {
+  position: relative;
+  width: 100%;
+  height: 92px;
+  background: #3c3a39;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.icon {
+  float: right;
+  margin-top: 8%;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
