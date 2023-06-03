@@ -202,20 +202,6 @@ body {
   flex-grow: 0;
 }
 
-.btn-list {
-  display: flex;
-  list-style: none;
-  padding: 0;
-}
-
-.btn-list li:not(:first-child) {
-  margin-left: 3%;
-}
-
-.btn-list a {
-  text-decoration: none;
-}
-
 .btn-css {
   box-sizing: border-box;
 
@@ -522,26 +508,6 @@ body {
   flex-grow: 0;
 }
 
-.btn-list-1 {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin-top: -7%;
-  margin-left: 4%;
-}
-
-.btn-list-1 li:not(:first-child) {
-  margin-left: 3%;
-}
-
-.btn-list-1 button {
-  border: none;
-}
-
-.btn-list-1 a {
-  text-decoration: none;
-}
-
 .btn-html-1 {
   display: flex;
   flex-direction: row;
@@ -682,6 +648,359 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.about-me {
+  width: 375px;
+  height: 1801px;
+  margin-top: 30%;
+  padding-top: 13%;
+
+  /* Theme 3 / Neutral 1 */
+
+  background-color: #1c1a19;
+  background-image: url("images/img_3.png");
+  background-repeat: no-repeat;
+  background-position: 100% 23%;
+}
+
+.headline-5 {
+  width: 327px;
+  height: 79px;
+  margin-left: 7%;
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+.text-content-3 {
+  width: 300px;
+  height: 148px;
+
+  /* Theme 3 / Body Reguler 2 */
+
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: -10%;
+  line-height: 24px;
+
+  /* or 150% */
+  margin-left: 7%;
+
+  /* Neutrals/N20 */
+
+  color: #f4f5f7;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.btn-sub-3 {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  border: none;
+  width: 156px;
+  height: 48px;
+  margin-left: 7%;
+
+  /* Theme 3 / Primary 1 */
+
+  background: #ff6b00;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.btn-sub-3 a {
+  width: 132px;
+  height: 24px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+  /* identical to box height, or 141% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  /* Theme 2 / Neutral 11 */
+
+  color: #fff;
+  text-decoration: none;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.h-row-1 {
+  margin-top: 55%;
+  width: 86%;
+  top: calc(50% - 0px / 2 + 0.5px);
+  border: 1px solid #836464;
+}
+
+.headline-6 {
+  width: 164px;
+  height: 24px;
+  font-family: "InaiMathi", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+
+  /* or 138% */
+
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.lang-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin-left: 5%;
+}
+
+.lang-list li {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  color: #fff;
+}
+
+#fwork-id {
+  margin-top: -6%;
+}
+
+#skill-id {
+  margin-top: -1%;
+  margin-left: 30%;
+}
+
+.contact-me {
+  margin-top: 23%;
+}
+
+.text-content-4 {
+  width: 327px;
+  height: 216px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+
+  /* or 138% */
+  margin: auto;
+  text-align: center;
+
+  /* Neutrals/N800 */
+
+  color: #172b4d;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.feedback-form {
+  margin-top: 10%;
+}
+
+.inp {
+  padding: 5%;
+  border-bottom: 1px solid #dbd8d7;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  width: 75%;
+  margin-left: 7%;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+}
+
+.btn-sub-4 {
+  margin-top: 5%;
+  margin-left: 33%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  border: none;
+  width: 131px;
+  height: 48px;
+
+  /* Theme 3 / Primary 1 */
+
+  background: #ff6b00;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.btn-sub-4 a {
+  width: 107px;
+  height: 24px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+  /* identical to box height, or 141% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  /* Theme 2 / Neutral 11 */
+
+  color: #fff;
+  text-decoration: none;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.text-area {
+  height: 114px;
+  width: 85%;
+  margin-top: 9%;
+  margin-left: 7%;
+  border-radius: 0;
+  background: #fbf8f7;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+
+  /* or 160% */
+
+  /* Theme 3 / Neutral 2 */
+
+  color: #3c3a39;
+}
+
+.h-row-2 {
+  margin-top: 20%;
+  background: #dbd8d7;
+  width: 100%;
+}
+
+.h-row-3 {
+  width: 35%;
+  border: 3px solid #0d151e;
+  border-radius: 10px;
+}
+
+.lang-title {
+  margin-top: 30%;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-left: 20%;
+}
+
+.lang-title li {
+  margin-left: 5%;
+}
+
+.lang-title li:first-child {
+  margin-top: 10%;
+}
+
+.btn-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.btn-list li:not(:first-child) {
+  margin-left: 3%;
+}
+
+.btn-list a {
+  text-decoration: none;
+}
+
+.btn-list-1 {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: -7%;
+  margin-left: 4%;
+}
+
+.btn-list-1 li:not(:first-child) {
+  margin-left: 3%;
+}
+
+.btn-list-1 button {
+  border: none;
+}
+
+.btn-list-1 a {
+  text-decoration: none;
+}
+
+#icons {
+  margin-top: 7%;
+  margin-left: 20%;
+}
+
+#icons li {
+  margin-left: 50%;
 }
 
 .topnav {
