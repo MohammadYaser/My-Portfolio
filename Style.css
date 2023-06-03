@@ -14,9 +14,6 @@ body {
 
 .mobile-container {
   color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   gap: 12px;
   width: 375px;
   height: 590px;
@@ -58,7 +55,16 @@ body {
 }
 
 .first-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   padding-left: 16px;
+}
+
+.second-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .title-1 {
@@ -67,30 +73,24 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
-  margin-top: -11%;
+  margin-top: -17%;
   font-size: 24px;
   line-height: 32px;
   display: flex;
   align-items: center;
   color: #fff5e1;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .text-content {
   width: 327px;
   height: 123px;
-  margin-top: -18px;
+  margin-top: -10%;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
 }
 
 .fa-icon {
@@ -107,7 +107,7 @@ body {
 }
 
 .fa-icon li {
-  margin-top: -23%;
+  margin-top: -76%;
   margin-left: 25%;
   display: inline;
 }
@@ -120,12 +120,8 @@ body {
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
-  align-items: center;
   color: #1c1a19;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  margin-top: 20%;
 }
 
 .h-row {
@@ -134,22 +130,12 @@ body {
   width: 327px;
   height: 0;
   border: 1px solid #212121;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .img-1 {
   width: 327px;
   height: 237px;
-  margin-top: 23%;
   background: url("images/img_1.png");
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .headline-3 {
@@ -229,6 +215,11 @@ body {
   flex-grow: 0;
 }
 
+.btn-css :hover {
+  font-size: medium;
+  color: #836464;
+}
+
 .btn-html {
   box-sizing: border-box;
 
@@ -254,6 +245,11 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.btn-html :hover {
+  font-size: medium;
+  color: #836464;
 }
 
 .btn-bootstrap {
@@ -283,6 +279,11 @@ body {
   flex-grow: 0;
 }
 
+.btn-bootstrap :hover {
+  font-size: medium;
+  color: #836464;
+}
+
 .btn-ruby {
   box-sizing: border-box;
 
@@ -308,6 +309,11 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.btn-ruby :hover {
+  font-size: medium;
+  color: #836464;
 }
 
 .btn-css a {
@@ -449,6 +455,10 @@ body {
   flex-grow: 0;
 }
 
+.btn-sub-1 :hover {
+  color: black;
+}
+
 .pro-art {
   padding-top: 14%;
   margin-top: 4%;
@@ -524,6 +534,11 @@ body {
   flex-grow: 0;
 }
 
+.btn-html-1 :hover {
+  font-size: medium;
+  color: #1c1a19;
+}
+
 .btn-html-1 a {
   width: 43px;
   height: 20px;
@@ -560,6 +575,11 @@ body {
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+
+.btn-bootstrap-1 :hover {
+  font-size: medium;
+  color: #1c1a19;
 }
 
 .btn-bootstrap-1 a {
@@ -602,6 +622,11 @@ body {
   flex-grow: 0;
 }
 
+.btn-ruby-1 :hover {
+  font-size: medium;
+  color: #1c1a19;
+}
+
 .btn-ruby-1 a {
   width: 37px;
   height: 20px;
@@ -633,6 +658,11 @@ body {
   background: #ff6b00;
 }
 
+.btn-sub-2 :hover {
+  font-size: large;
+  color: #1c1a19;
+}
+
 .btn-sub-2 a {
   width: 100px;
   height: 24px;
@@ -651,6 +681,9 @@ body {
 }
 
 .about-me {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   width: 375px;
   height: 1801px;
   margin-top: 30%;
@@ -687,8 +720,8 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  margin-top: -10%;
   line-height: 24px;
+  margin-top: -18%;
 
   /* or 150% */
   margin-left: 7%;
@@ -696,19 +729,9 @@ body {
   /* Neutrals/N20 */
 
   color: #f4f5f7;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 .btn-sub-3 {
-  /* Auto layout */
-
-  display: flex;
-  flex-direction: row;
   align-items: center;
   padding: 12px;
   gap: 10px;
@@ -720,12 +743,11 @@ body {
   /* Theme 3 / Primary 1 */
 
   background: #ff6b00;
+}
 
-  /* Inside auto layout */
-
-  flex: none;
-  order: 2;
-  flex-grow: 0;
+.btn-sub-3 :hover {
+  font-size: medium;
+  color: #1c1a19;
 }
 
 .btn-sub-3 a {
@@ -739,27 +761,14 @@ body {
 
   /* identical to box height, or 141% */
 
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
-
-  /* Theme 2 / Neutral 11 */
-
   color: #fff;
   text-decoration: none;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .h-row-1 {
-  margin-top: 55%;
   width: 86%;
-  top: calc(50% - 0px / 2 + 0.5px);
   border: 1px solid #836464;
 }
 
@@ -814,6 +823,9 @@ body {
 }
 
 .contact-me {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   margin-top: 23%;
 }
 
@@ -882,6 +894,10 @@ body {
   flex: none;
   order: 3;
   flex-grow: 0;
+}
+
+.btn-sub-4 :hover {
+  color: #1c1a19;
 }
 
 .btn-sub-4 a {
