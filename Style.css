@@ -1037,3 +1037,7 @@ body {
   margin-top: 7%;
   margin-left: 20%;
 }
+
+#icons li {
+  margin-left: 50%;
+}
