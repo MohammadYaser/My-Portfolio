@@ -1041,3 +1041,11 @@ body {
 #icons li {
   margin-left: 50%;
 }
+
+.fa-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  
+}
