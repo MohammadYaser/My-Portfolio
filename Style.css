@@ -93,25 +93,6 @@ body {
   color: #fff;
 }
 
-.fa-icon {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 8px;
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
-.fa-icon li {
-  margin-top: -76%;
-  margin-left: 25%;
-  display: inline;
-}
-
 .headline-2 {
   width: 327px;
   height: 83px;
@@ -1008,15 +989,6 @@ body {
 
 .btn-list-1 a {
   text-decoration: none;
-}
-
-#icons {
-  margin-top: 7%;
-  margin-left: 20%;
-}
-
-#icons li {
-  margin-left: 50%;
 }
 
 .topnav {
