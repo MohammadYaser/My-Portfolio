@@ -1047,5 +1047,10 @@ body {
   flex-direction: row;
   align-items: flex-start;
   padding: 8px;
-  
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
