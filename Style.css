@@ -1,5 +1,5 @@
 body {
-  background-color: aquamarine;
+  background-color: #fffdde ;
 }
 
 .container {
@@ -865,7 +865,13 @@ body {
   border: none;
   width: 131px;
   height: 48px;
-
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  
   /* Theme 3 / Primary 1 */
 
   background: #ff6b00;
@@ -877,35 +883,11 @@ body {
   flex-grow: 0;
 }
 
-.btn-sub-4 :hover {
+.btn-sub-4:hover {
+  font-size: 18px;
+  font-weight: 900;
   color: #1c1a19;
-}
-
-.btn-sub-4 a {
-  width: 107px;
-  height: 24px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-
-  /* identical to box height, or 141% */
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  /* Theme 2 / Neutral 11 */
-
-  color: #fff;
-  text-decoration: none;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  
 }
 
 .text-area {

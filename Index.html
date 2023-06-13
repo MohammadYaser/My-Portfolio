@@ -247,12 +247,12 @@
             I'm always interested in hearing about new projects, so if you'd
             like to chat please get in touch.
           </h3>
-          <form class="feedback-form">
-            <input type="text" maxlength="30" class="inp" placeholder="Full name" />
-            <input type="email" class="inp" placeholder="Email address" />
-            <textarea maxlength="500" class="text-area" placeholder="Write me something..."></textarea>
+          <form class="feedback-form" action="https://formspree.io/f/mbjendjq" method="post">
+            <input type="text" name="user_name" maxlength="30" class="inp" placeholder="Full name" required="" />
+            <input type="email" name="email" class="inp" placeholder="Email address" required="" />
+            <textarea maxlength="500" name="text_area" class="text-area" placeholder="Write me something..."></textarea>
             <button type="submit" class="btn-sub-4">
-              <a href="#">Get in touch</a>
+              Get in touch
             </button>
           </form>
           <hr class="h-row-2" />
