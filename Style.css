@@ -93,6 +93,17 @@ body {
   color: #fff;
 }
 
+.text-area {
+  height: 114px;
+  width: 85%;
+  margin-top: 9%;
+  margin-left: 7%;
+  border-radius: 0;
+  background: #fbf8f7;
+  border: none;
+  
+}
+
 .headline-2 {
   width: 327px;
   height: 83px;
