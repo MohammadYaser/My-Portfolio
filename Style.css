@@ -1054,3 +1054,9 @@ body {
   order: 1;
   flex-grow: 0;
 }
+
+.fa-icon li {
+  margin-top: -76%;
+  margin-left: 25%;
+  display: inline;
+}
