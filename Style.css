@@ -1,5 +1,5 @@
 body {
-  background-color: #fffdde ;
+  background-color: #fffdde;
 }
 
 .container {
@@ -871,7 +871,7 @@ body {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
-  
+
   /* Theme 3 / Primary 1 */
 
   background: #ff6b00;
@@ -887,7 +887,6 @@ body {
   font-size: 18px;
   font-weight: 900;
   color: #1c1a19;
-  
 }
 
 .text-area {
