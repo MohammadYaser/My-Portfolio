@@ -115,7 +115,6 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
 }
 
 .b-img-1 {
@@ -416,7 +415,7 @@ nav {
   background-color: #f7f7f7;
   color: #979493;
   border: none;
-  border-bottom: 1px solid #DBD8D7;
+  border-bottom: 1px solid #dbd8d7;
   padding-left: 20px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -429,7 +428,7 @@ nav {
   width: 100%;
   color: black;
   border: none;
-  border-bottom: 1px solid #DBD8D7;
+  border-bottom: 1px solid #dbd8d7;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   margin-top: 54px;
@@ -613,12 +612,11 @@ nav {
     display: flex;
     margin-top: 0;
     margin-left: 6%;
-    width:32%;
+    width: 32%;
   }
 
   .line {
     width: 40%;
-    
   }
 
   .project-1 {
@@ -631,9 +629,11 @@ nav {
     margin-left: -30%;
     width: 80%;
   }
-.sub-1 {
-  margin-left: -52%;
-}
+
+  .sub-1 {
+    margin-left: -52%;
+  }
+
   .multy-task {
     grid-column-start: 2;
     margin-bottom: 10px;
@@ -687,7 +687,6 @@ nav {
     background-repeat: no-repeat;
     background-size: 40% 30%;
     background-position: 100% 10%;
-    
   }
 
   .language-container {
@@ -719,7 +718,7 @@ nav {
     color: #fff;
     font-family: 'Inter', sans-serif;
     font-size: 17px;
-    margin-top:7%;
+    margin-top: 7%;
   }
 
   .d-about-b {
@@ -760,7 +759,6 @@ nav {
     margin-top: 0;
     padding-bottom: 30px;
     margin-left: -16%;
-    
   }
 
   .language-desktop2 {
@@ -819,13 +817,15 @@ nav {
   .fullname {
     padding: 20px;
   }
-.same-row {
-  display: grid;
-  grid-template-rows: 1;
-  grid-template-columns: 2fr 2fr;
-  width: 100%;
-  grid-gap: 15px;
-}
+
+  .same-row {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 2fr 2fr;
+    width: 100%;
+    grid-gap: 15px;
+  }
+
   .button-end {
     margin-left: -80%;
   }
