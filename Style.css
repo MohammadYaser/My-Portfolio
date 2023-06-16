@@ -38,6 +38,7 @@ nav {
 .my-logo {
   color: #fff;
 }
+
 .desktop-container {
   display: none;
 }
@@ -108,16 +109,16 @@ nav {
 .icon-list {
   list-style-type: none;
 }
+
 .last-page-icons {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
 .b-img-1 {
   display: flex;
-  width: 150px;
-  height: 312.03px;
   justify-content: space-between;
   height: 55px;
 }
@@ -328,8 +329,6 @@ nav {
   background-image: url('images/aboutme_bg.png');
   background-repeat: no-repeat;
   background-position: 100% 23%;
- 
-  
 }
 
 .language {
@@ -500,7 +499,7 @@ nav {
     background-repeat: no-repeat;
     background-size: 40% 70%;
     background-position: 100% 6%;
-    }
+  }
 
   .header-text {
     grid-column-start: 2;
