@@ -115,6 +115,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  
 }
 
 .b-img-1 {
@@ -415,7 +416,7 @@ nav {
   background-color: #f7f7f7;
   color: #979493;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #DBD8D7;
   padding-left: 20px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -428,7 +429,7 @@ nav {
   width: 100%;
   color: black;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #DBD8D7;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   margin-top: 54px;
@@ -611,11 +612,13 @@ nav {
   .projects {
     display: flex;
     margin-top: 0;
+    margin-left: 6%;
+    width:32%;
   }
 
   .line {
     width: 40%;
-    margin-left: 5px;
+    
   }
 
   .project-1 {
@@ -625,8 +628,12 @@ nav {
 
   .project-head {
     grid-column-start: 2;
+    margin-left: -30%;
+    width: 80%;
   }
-
+.sub-1 {
+  margin-left: -52%;
+}
   .multy-task {
     grid-column-start: 2;
     margin-bottom: 10px;
@@ -680,6 +687,7 @@ nav {
     background-repeat: no-repeat;
     background-size: 40% 30%;
     background-position: 100% 10%;
+    
   }
 
   .language-container {
@@ -711,6 +719,7 @@ nav {
     color: #fff;
     font-family: 'Inter', sans-serif;
     font-size: 17px;
+    margin-top:7%;
   }
 
   .d-about-b {
@@ -741,6 +750,7 @@ nav {
     display: grid;
     width: 90%;
     margin-top: 0;
+    margin-top: 7%;
   }
 
   .desktop-language {
@@ -749,6 +759,8 @@ nav {
     grid-template-columns: 30% 30% 30%;
     margin-top: 0;
     padding-bottom: 30px;
+    margin-left: -16%;
+    
   }
 
   .language-desktop2 {
@@ -788,12 +800,15 @@ nav {
   }
 
   .lastpage-heading {
-    margin: 50px 30px 0 30px;
+    margin-left: 135px;
+    margin-top: 135px;
     font-family: 'Inter', sans-serif;
     font-style: bold;
     font-weight: 700;
     font-size: 40px;
-    line-height: 52px;
+    width: 455px;
+    height: 256px;
+    text-align: justify;
   }
 
   .form {
@@ -804,7 +819,13 @@ nav {
   .fullname {
     padding: 20px;
   }
-
+.same-row {
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 2fr 2fr;
+  width: 100%;
+  grid-gap: 15px;
+}
   .button-end {
     margin-left: -80%;
   }
@@ -830,7 +851,8 @@ nav {
 
   .line {
     width: 65%;
-    margin-left: 5px;
+    margin-left: 2%;
+    margin-top: 1px;
   }
 
   .projects-section2 {
@@ -842,6 +864,7 @@ nav {
     padding-left: 2%;
     margin-right: 20px;
     margin-left: 10%;
+    grid-gap: 25px;
   }
 
   .page2 {
