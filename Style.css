@@ -248,6 +248,8 @@ nav {
   flex-direction: column;
   align-self: center;
   margin-top: 50px;
+  margin-left: 10%;
+  margin-bottom: 35%;
   background-image: url(images/Placeholder1.png);
   background-color: #ccc;
   padding: 24px 0 24px 0;
