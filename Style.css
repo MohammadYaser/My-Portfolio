@@ -260,7 +260,7 @@ nav {
 }
 
 .h2-margin {
-  margin-top: 70px;
+  margin-top: 105px;
 }
 
 .web-icon-page2 {
@@ -633,7 +633,27 @@ nav {
   .sub-1 {
     margin-left: -52%;
   }
+  .page2:hover .heading4 {
+    display: none;
+  }
 
+  .page2:hover .project-discription2 {
+    display: none;
+  }
+
+  .page2:hover .web-icons4 {
+    display: none;
+  }
+
+  .page2:hover .button4 {
+    display: flex;
+    top: 80%;
+  }
+
+  .page2:hover {
+    background-image: url(images/hover.png);
+    padding-top: 340px;
+  }
   .multy-task {
     grid-column-start: 2;
     margin-bottom: 10px;
@@ -673,6 +693,7 @@ nav {
     margin-right: 10px;
     display: flex;
     flex-wrap: wrap;
+    
   }
 
   .button4 {
@@ -798,8 +819,8 @@ nav {
   }
 
   .lastpage-heading {
-    margin-left: 135px;
-    margin-top: 135px;
+    margin-left: 80px;
+    margin-top: 80px;
     font-family: 'Inter', sans-serif;
     font-style: bold;
     font-weight: 700;
@@ -808,23 +829,24 @@ nav {
     height: 256px;
     text-align: justify;
   }
+.bg-2 {
+  background-image: url(images/test_bg1.png);
+}
+
+.bg-3 {
+  background-image: url(images/test_bg.png);
+}
 
   .form {
     margin-right: 30px;
-    margin-left: 30px;
+    margin-left: -5%;
   }
 
   .fullname {
     padding: 20px;
   }
 
-  .same-row {
-    display: grid;
-    grid-template-rows: 1;
-    grid-template-columns: 2fr 2fr;
-    width: 100%;
-    grid-gap: 15px;
-  }
+
 
   .button-end {
     margin-left: -80%;
@@ -872,7 +894,6 @@ nav {
     display: flex;
     flex-wrap: wrap;
   }
-
   .d-about-b {
     grid-column-start: 2;
     margin-left: 0;
