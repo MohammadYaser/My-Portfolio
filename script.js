@@ -8,3 +8,7 @@ function displayMobileMenu() {
   if (mobileNav.style.display === 'none') mobileNav.style.display = 'block';
   else mobileNav.style.display = 'none';
 }
+function hideMobileMenu() {
+  if (mobileNav.style.display === 'block') mobileNav.style.display = 'none';
+  else mobileNav.style.display = 'block';
+}
