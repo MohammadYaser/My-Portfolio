@@ -43,7 +43,37 @@ nav {
   display: none;
 }
 
+.mobile-menu {
+  display: none;
+  position: fixed;
+  min-width: 100%;
+  z-index: 3;
+}
 
+#mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background:#3c3a39;
+  min-width: 100%;
+}
+
+.cancel {
+  display: flex;
+  height: 5vh;
+  padding: 4px 24px 4px 311px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#mobile-nav-bar {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  height: 85vh;
+  margin-left: 6, 4%;
+  margin-right: 6.4%;
+}
 
 
 .desktop-container {
