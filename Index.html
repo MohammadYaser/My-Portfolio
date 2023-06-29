@@ -23,6 +23,30 @@
 
   <body>
     <header>
+
+        <nav class="mobile-menu">
+            <div id="mobile-menu">
+              <a class="cancel" href="#">
+                <img src="images/cancel.svg" alt="cancel">
+              </a>
+              <ul id="mobile-nav-bar">
+                <li class="mobile-nav-link">
+                  <a href="#introduction">Portfolio</a>
+                </li>
+                <hr class="menu-divider">
+                <li class="mobile-nav-link">
+                  <a href="#about_me">About</a>
+                </li>
+                <hr class="menu-divider">
+                <li class="mobile-nav-link">
+                  <a href="#contact_form">Contact</a>
+                </li>
+                <hr class="menu-divider">
+              </ul>
+              <div class="menu-footer"><div id="bottom-line"></div></div>
+            </div>
+        </nav>
+
       <nav>
           <h4 class="my-logo">my logo</h4>
           <img class="menu-img" src="images/Menu.svg">
@@ -34,7 +58,8 @@
           </div>
       </nav>
   </header>
-  <section class="page1-content black-bg">
+   
+  <section id="introduction" class="page1-content black-bg">
       <div class="header-text">
           <h1 class="my-name">Hey There.<br>I'm Yaser.</h1>
           <h2 class="my-position">I’am a Software Developer</h2>
@@ -233,7 +258,7 @@
           </div>
       </div>
   </section>
-  <section class="page6-content black-bg page4">
+  <section id="about_me" class="page6-content black-bg page4">
       <div class="language-container">
           <div class="desktop-language-texts">
               <h1 class="my-name about-me">About me</h1>
@@ -333,7 +358,7 @@
           </div>
       </div>
   </section>
-  <section class="lastpage">
+  <section id="contact_form" class="lastpage">
       <div class="contact-form">
           <h2 class="lastpage-heading">I'm always interested in hearing about new projects, so if you'd like to chat
               please get in touch.</h2>
@@ -376,3 +401,4 @@
   </section>
 </body>
 </html>
+<script src="script.js"></script>

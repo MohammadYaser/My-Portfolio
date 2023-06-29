@@ -39,6 +39,13 @@ nav {
   color: #fff;
 }
 
+#nav-bar {
+  display: none;
+}
+
+
+
+
 .desktop-container {
   display: none;
 }
