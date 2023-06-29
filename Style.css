@@ -75,6 +75,44 @@ nav {
   margin-right: 6.4%;
 }
 
+.menu-footer {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 8px;
+  height: 10vh;
+}
+
+.mobile-nav-link {
+  display: flex;
+  width: 327px;
+  padding-top: 8px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 7px;
+  border-radius: 8px;
+}
+
+.menu-divider {
+  min-width: 327px;
+  height: 1px;
+  background: #6f6c6b;
+}
+
+.mobile-nav-link > a {
+  display: flex;
+  width: 295px;
+  height: 40px;
+  padding: 8px 68px 8px 0.1px;
+  align-items: center;
+  color: #fff5e1;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 44px;
+}
 
 .desktop-container {
   display: none;
