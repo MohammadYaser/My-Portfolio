@@ -53,7 +53,7 @@ nav {
 #mobile-menu {
   display: flex;
   flex-direction: column;
-  background:#3c3a39;
+  background: #3c3a39;
   min-width: 100%;
 }
 
