@@ -75,6 +75,28 @@ nav {
   margin-right: 6.4%;
 }
 
+.mobile-nav-link > a {
+  display: flex;
+  width: 295px;
+  height: 40px;
+  padding: 8px 68px 8px 0.1px;
+  align-items: center;
+  color: #fff5e1;
+  font-size: 32px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.icon-list li a {
+  text-decoration: none;
+}
+
+#mobile-nav-bar li a {
+  text-decoration: none;
+  color: #fff5e1;
+}
+
 .menu-footer {
   background: #fff;
   display: flex;
@@ -99,19 +121,6 @@ nav {
   min-width: 327px;
   height: 1px;
   background: #6f6c6b;
-}
-
-.mobile-nav-link > a {
-  display: flex;
-  width: 295px;
-  height: 40px;
-  padding: 8px 68px 8px 0.1px;
-  align-items: center;
-  color: #fff5e1;
-  font-size: 32px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  line-height: 44px;
 }
 
 .desktop-container {
@@ -541,6 +550,10 @@ nav {
 }
 
 @media (min-width: 768px) {
+  #mobile-menu {
+    display: none;
+  }
+
   .menu-img {
     display: none;
   }
