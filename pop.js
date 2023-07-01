@@ -20,6 +20,7 @@ const cardInfos = {
     'images/Cancel.svg',
     'images/liveIcon.svg',
     'images/githubIcon.svg',
+
   ],
   description: [
     "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
@@ -101,172 +102,42 @@ mainCard += '</div>'; // End the cards grid container
 workSection.innerHTML = mainCard;
 
 let modals = '';
-modals += `
-<div class="modal" id="modal0">
-  <div class="modal-header">
-    <div class="modal-heading">
-      <div class="modal-title">${titleArr[0]}</div>
-        <div data-close-button class="close-button">
-          <img src=${imageArr[5]} alt="Cancel">
-        </div>
-      </div>
-      <ul class="languages">
-        <li class="lang-list1">${technologiesArr[1]}</li>
-        <li class="lang-list1">${technologiesArr[2]}</li>
-        <li class="lang-list1">${technologiesArr[4]}</li>
-      </ul>
-    </div>
-    <div class="right-block">
-      <div class="snapshot">
-        <img class="modal-img" src=${imageArr[0]} alt="Snapshot">
-      </div>
-      <div class="modal-body">
-        <p class="modal-text">${descriptionArr[2]}</p>
-        <div class="action">
-          <a class="action-button" href=${cardInfos.live} target="_blank">${buttonArr[1]}
-            <img src=${imageArr[6]} alt="live-icon">
-          </a>
-          <a class="action-button" href=${cardInfos.source} target="_blank">${buttonArr[2]}
-            <img src=${imageArr[7]} alt="github-icon">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="modal" id="modal1">
-  <div class="modal-header">
-    <div class="modal-heading">
-      <div class="modal-title">${titleArr[0]}</div>
-        <div data-close-button class="close-button">
-          <img src=${imageArr[5]} alt="Cancel">
+for (let i = 0; i < titleArr.length; i += 1) {
+  modals += `
+    <div class="modal" id="modal${i}">
+      <div class="modal-header">
+        <div class="modal-heading">
+          <div class="modal-title">${titleArr[i]}</div>
+          <div data-close-button class="close-button">
+            <img src=${imageArr[5]} alt="Cancel">
+          </div>
         </div>
+        <ul class="languages">
+          <li class="lang-list1">${technologiesArr[1]}</li>
+          <li class="lang-list1">${technologiesArr[2]}</li>
+          <li class="lang-list1">${technologiesArr[4]}</li>
+        </ul>
       </div>
-      <ul class="languages">
-        <li class="lang-list1">${technologiesArr[1]}</li>
-        <li class="lang-list1">${technologiesArr[2]}</li>
-        <li class="lang-list1">${technologiesArr[4]}</li>
-      </ul>
-    </div>
-    <div class="right-block">
-      <div class="snapshot">
-        <img class="modal-img" src=${imageArr[1]} alt="Snapshot">
-      </div>
-      <div class="modal-body">
-        <p class="modal-text">${descriptionArr[2]}</p>
-        <div class="action">
-          <a class="action-button" href=${cardInfos.live} target="_blank">${buttonArr[1]}
-            <img src=${imageArr[6]} alt="live-icon">
-          </a>
-          <a class="action-button" href=${cardInfos.source} target="_blank">${buttonArr[2]}
-            <img src=${imageArr[7]} alt="github-icon">
-          </a>
+      <div class="right-block">
+        <div class="snapshot">
+          <img class="modal-img" src=${imageArr[2]} alt="Snapshot">
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal" id="modal2">
-  <div class="modal-header">
-    <div class="modal-heading">
-      <div class="modal-title">${titleArr[1]}</div>
-        <div data-close-button class="close-button">
-          <img src=${imageArr[5]} alt="Cancel">
-        </div>
-      </div>
-      <ul class="languages">
-        <li class="lang-list1">${technologiesArr[1]}</li>
-        <li class="lang-list1">${technologiesArr[2]}</li>
-        <li class="lang-list1">${technologiesArr[4]}</li>
-      </ul>
-    </div>
-    <div class="right-block">
-      <div class="snapshot">
-        <img class="modal-img" src=${imageArr[2]} alt="Snapshot">
-      </div>
-      <div class="modal-body">
-        <p class="modal-text">${descriptionArr[2]}</p>
-        <div class="action">
-          <a class="action-button" href=${cardInfos.live} target="_blank">${buttonArr[1]}
-            <img src=${imageArr[6]} alt="live-icon">
-          </a>
-          <a class="action-button" href=${cardInfos.source} target="_blank">${buttonArr[2]}
-            <img src=${imageArr[7]} alt="github-icon">
-          </a>
+        <div class="modal-body">
+          <p class="modal-text">${descriptionArr[2]}</p>
+          <div class="action">
+            <a class="action-button" href=${cardInfos.live} target="_blank">${buttonArr[1]}
+              <img src=${imageArr[6]} alt="live-icon">
+            </a>
+            <a class="action-button" href=${cardInfos.source} target="_blank">${buttonArr[2]}
+              <img src=${imageArr[7]} alt="github-icon">
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-
-<div class="modal" id="modal3">
-  <div class="modal-header">
-    <div class="modal-heading">
-      <div class="modal-title">${titleArr[2]}</div>
-        <div data-close-button class="close-button">
-          <img src=${imageArr[5]} alt="Cancel">
-        </div>
-      </div>
-      <ul class="languages">
-        <li class="lang-list1">${technologiesArr[1]}</li>
-        <li class="lang-list1">${technologiesArr[2]}</li>
-        <li class="lang-list1">${technologiesArr[4]}</li>
-      </ul>
-    </div>
-    <div class="right-block">
-      <div class="snapshot">
-        <img class="modal-img" src=${imageArr[3]} alt="Snapshot">
-      </div>
-      <div class="modal-body">
-        <p class="modal-text">${descriptionArr[2]}</p>
-        <div class="action">
-          <a class="action-button" href=${cardInfos.live} target="_blank">${buttonArr[1]}
-            <img src=${imageArr[6]} alt="live-icon">
-          </a>
-          <a class="action-button" href=${cardInfos.source} target="_blank">${buttonArr[2]}
-            <img src=${imageArr[7]} alt="github-icon">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal" id="modal4">
-  <div class="modal-header">
-    <div class="modal-heading">
-      <div class="modal-title">${titleArr[3]}</div>
-        <div data-close-button class="close-button">
-          <img src=${imageArr[5]} alt="Cancel">
-        </div>
-      </div>
-      <ul class="languages">
-        <li class="lang-list1">${technologiesArr[1]}</li>
-        <li class="lang-list1">${technologiesArr[2]}</li>
-        <li class="lang-list1">${technologiesArr[4]}</li>
-      </ul>
-    </div>
-    <div class="right-block">
-      <div class="snapshot">
-        <img class="modal-img" src=${imageArr[4]} alt="Snapshot">
-      </div>
-      <div class="modal-body">
-        <p class="modal-text">${descriptionArr[2]}</p>
-        <div class="action">
-          <a class="action-button" href=${cardInfos.live} target="_blank">${buttonArr[1]}
-            <img src=${imageArr[6]} alt="live-icon">
-          </a>
-          <a class="action-button" href=${cardInfos.source} target="_blank">${buttonArr[2]}
-            <img src=${imageArr[7]} alt="github-icon">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
+  `;
+}
 
 modal.innerHTML = modals;
 
