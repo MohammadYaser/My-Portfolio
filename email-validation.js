@@ -17,10 +17,3 @@ function submitControl(event) {
 }
 
 form.addEventListener('submit', submitControl);
-
-
-
-
-
-
-
