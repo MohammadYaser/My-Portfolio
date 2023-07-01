@@ -216,9 +216,9 @@
       <div class="contact-form">
           <h2 class="lastpage-heading">I'm always interested in hearing about new projects, so if you'd like to chat
               please get in touch.</h2>
-          <form class="form" action="https://formspree.io/f/xnqwwrzy" method="POST">
+          <form id="form" class="form" action="https://formspree.io/f/xnqwwrzy" method="POST">
               <input class="fullname" type="text" name="fullname" placeholder="Full name" required>
-              <input class="fullname" type="email" name="fullname" placeholder="Email address" required>
+              <input class="fullname" id="email" type="email" name="fullname" placeholder="Email address" required>
               <textarea class="text-area" placeholder="Enter text here" required></textarea>
               <button type="submit" class="animate-btn button1 button1-text button-end btn-d">Get in touch</button>
           </form>
@@ -252,6 +252,9 @@
           </li>
       </ul>
   </section>
+  <div id="modals-container"></div>
+  <div id="overlay"></div>
 </body>
 </html>
+<script src="pop.js"></script>
 <script src="script.js"></script>
