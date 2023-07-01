@@ -1,4 +1,3 @@
-
 const workSection = document.getElementById('work-section');
 const modal = document.getElementById('modals-container');
 
@@ -10,7 +9,7 @@ const cardInfos = {
     'Profesional Art Printing Data More',
     'My Recent Works',
     'Work-Section 1',
-    'Work-Section 2'
+    'Work-Section 2',
   ],
   image: [
     'images/ImgPlaceholder0.svg',
@@ -70,16 +69,15 @@ mainCard += `
 // Generate the dynamic cards HTML
 mainCard += '<div id="cards-grid">'; // Start the cards grid container
 
-for (let i = 1; i < titleArr.length; i++) {
-  if (i==1) {
+for (let i = 1; i < titleArr.length; i += 1) {
+  if (i === 1) {
     mainCard += `
     <aside class="card">
       <img class="card-img" src=${imageArr[i]} alt="placeholder">
       <button data-modal-target="#modal${i}" class="large-button" type="button">${buttonArr[0]}</button>
     </aside>
   `;
-  }
-  else {
+  } else {
     mainCard += `
     <aside class="card">
       <img class="card-img" src=${imageArr[4]} alt="placeholder">
@@ -96,13 +94,11 @@ for (let i = 1; i < titleArr.length; i++) {
     </aside>
   `;
   }
-  
 }
 
 mainCard += '</div>'; // End the cards grid container
 
 workSection.innerHTML = mainCard;
-
 
 let modals = '';
 modals += `
