@@ -1,3 +1,4 @@
+
 const workSection = document.getElementById('work-section');
 const modal = document.getElementById('modals-container');
 
@@ -8,6 +9,8 @@ const cardInfos = {
     'Website Portfolio',
     'Profesional Art Printing Data More',
     'My Recent Works',
+    'Work-Section 1',
+    'Work-Section 2'
   ],
   image: [
     'images/ImgPlaceholder0.svg',
@@ -41,6 +44,8 @@ const technologiesArr = cardInfos.technologies;
 const buttonArr = cardInfos.button;
 
 let mainCard = '';
+
+// Generate the main card HTML
 mainCard += `
 <div class="work-section-heading">
   <h2 class="work-section-title">${titleArr[4]}</h2>
@@ -60,86 +65,44 @@ mainCard += `
     <button data-modal-target="#modal0" type="button">${buttonArr[0]}</button>
   </div>
 </aside>
-
-<div id="cards-grid">
-<aside class="card">
-  <img class="card-img" src=${imageArr[1]} alt="placeholder">
-  <button data-modal-target="#modal1" class="large-button" type="button">${buttonArr[0]}</button>
-</aside>
-      
-<aside class="card">
-  <img  class="card-img" src=${imageArr[2]} alt="placeholder">
-  <div class="right-block2">
-    <h3 class="right-block2-heading">${titleArr[1]}</h3>
-    <p class="right-block2-description">${descriptionArr[1]}</p>
-    <ul class="lang2">
-      <li class="lang-list2">${technologiesArr[1]}</li>
-      <li class="lang-list2">${technologiesArr[2]}</li>
-      <li class="lang-list2">${technologiesArr[3]}</li>
-    </ul>
-  </div>
-  <button data-modal-target="#modal2" class="large-button" type="button">${buttonArr[0]}</button>
-</aside>
-
-<aside class="card">
-  <img  class="card-img" src=${imageArr[3]} alt="placeholder">
-  <div class="right-block2">
-    <h3 class="right-block2-heading">${titleArr[2]}</h3>
-    <p class="right-block2-description">${descriptionArr[1]}</p>
-    <ul class="lang2">
-      <li class="lang-list2">${technologiesArr[1]}</li>
-      <li class="lang-list2">${technologiesArr[2]}</li>
-      <li class="lang-list2">${technologiesArr[3]}</li>
-    </ul>
-  </div>
-  <button data-modal-target="#modal3" class="large-button" type="button">${buttonArr[0]}</button>
-</aside>
-      
-<aside class="card">
-  <img  class="card-img" src=${imageArr[4]} alt="placeholder">
-  <div class="right-block2">
-    <h3 class="right-block2-heading">${titleArr[3]}</h3>
-    <p class="right-block2-description">${descriptionArr[1]}</p>
-    <ul class="lang2">
-      <li class="lang-list2">${technologiesArr[1]}</li>
-      <li class="lang-list2">${technologiesArr[2]}</li>
-      <li class="lang-list2">${technologiesArr[3]}</li>
-    </ul>
-  </div>
-  <button data-modal-target="#modal4" class="large-button" type="button">${buttonArr[0]}</button>
-</aside>
-
-<aside class="card">
-  <img  class="card-img" src=${imageArr[2]} alt="placeholder">
-  <div class="right-block2">
-    <h3 class="right-block2-heading">${titleArr[1]}</h3>
-    <p class="right-block2-description">${descriptionArr[1]}</p>
-    <ul class="lang2">
-      <li class="lang-list2">${technologiesArr[1]}</li>
-      <li class="lang-list2">${technologiesArr[2]}</li>
-      <li class="lang-list2">${technologiesArr[3]}</li>
-    </ul>
-  </div>
-  <button data-modal-target="#modal2" class="large-button" type="button">${buttonArr[0]}</button>
-</aside>
-      
-<aside class="card">
-  <img  class="card-img" src=${imageArr[3]} alt="placeholder">
-  <div class="right-block2">
-    <h3 class="right-block2-heading">${titleArr[2]}</h3>
-    <p class="right-block2-description">${descriptionArr[1]}</p>
-    <ul class="lang2">
-      <li class="lang-list2">${technologiesArr[1]}</li>
-      <li class="lang-list2">${technologiesArr[2]}</li>
-      <li class="lang-list2">${technologiesArr[3]}</li>
-    </ul>
-  </div>
-  <button data-modal-target="#modal3" class="large-button" type="button">${buttonArr[0]}</button>
-</aside>
-</div>
 `;
 
+// Generate the dynamic cards HTML
+mainCard += '<div id="cards-grid">'; // Start the cards grid container
+
+for (let i = 1; i < titleArr.length; i++) {
+  if (i==1) {
+    mainCard += `
+    <aside class="card">
+      <img class="card-img" src=${imageArr[i]} alt="placeholder">
+      <button data-modal-target="#modal${i}" class="large-button" type="button">${buttonArr[0]}</button>
+    </aside>
+  `;
+  }
+  else {
+    mainCard += `
+    <aside class="card">
+      <img class="card-img" src=${imageArr[4]} alt="placeholder">
+      <div class="right-block2">
+        <h3 class="right-block2-heading">${titleArr[i]}</h3>
+        <p class="right-block2-description">${descriptionArr[1]}</p>
+        <ul class="lang2">
+          <li class="lang-list2">${technologiesArr[1]}</li>
+          <li class="lang-list2">${technologiesArr[2]}</li>
+          <li class="lang-list2">${technologiesArr[3]}</li>
+        </ul>
+      </div>
+      <button data-modal-target="#modal${i}" class="large-button" type="button">${buttonArr[0]}</button>
+    </aside>
+  `;
+  }
+  
+}
+
+mainCard += '</div>'; // End the cards grid container
+
 workSection.innerHTML = mainCard;
+
 
 let modals = '';
 modals += `
@@ -347,3 +310,22 @@ overlay.addEventListener('click', () => {
     closeModal(modal);
   });
 });
+
+const form = document.getElementById('form');
+const errorMsg = form.querySelector('.errText');
+
+function submitControl(event) {
+  event.preventDefault();
+
+  const email = document.getElementById('email');
+  const emailVal = email.value;
+
+  if (emailVal === emailVal.toLowerCase()) {
+    form.submit();
+  } else {
+    errorMsg.textContent = 'This message has not been sent! The e-mail must be in lower case letters.';
+    form.append(errorMsg);
+  }
+}
+
+form.addEventListener('submit', submitControl);
